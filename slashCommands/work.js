@@ -2,7 +2,7 @@ module.exports = {
   name: "work",
   description: "Work in your factory.",
   cooldown: {
-    time: 600000,
+    time: 60000,
     message: ""
   },
   memberpermissions: [],

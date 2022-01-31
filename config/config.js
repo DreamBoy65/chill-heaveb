@@ -8,12 +8,12 @@ module.exports = {
         }, 
       status: "dnd"
       },
-      token: "OTM3MjM2NjMzODIzMTA1MDI0.YfYzog.zthX0f8UJkWYMda5nOa_pQWAkRU"
+      token: process.env.TOKEN
     },
     prefix: ".",
     support: "https://discord.gg/pwAXkpsCHf",
     invite: "https://dsc.gg/factory.gg",
-    loadSlashsGlobal: false,
+    loadSlashsGlobal: true,
     slashCommandsDirs: [
       {
         Folder: "",
@@ -26,11 +26,11 @@ module.exports = {
     timezone: "Asia/Calcutta",
     
     channels: {
-        debug: "924076193253326869",
-        guildJoin: "924076079839346709",
-        guildLeave: "924076132846948412",
-        feedback: "924076275893674025",
-        commands: "924076446689939556"
+        debug: "937316311560753172",
+        guildJoin: "937316217348304977",
+        guildLeave: "937316265259839510",
+        feedback: "937316380678688798",
+        commands: "937316499360710656"
     },
     
     costs: {
@@ -55,7 +55,7 @@ module.exports = {
 
     database: {
         enable: true,
-        uri: "mongodb+srv://f:f@cluster0.9pwp1.mongodb.net/factory?retryWrites=true&w=majority",
+        uri: process.env.MONGO_URI,
         config: {
             useUnifiedTopology: true,
             useNewUrlParser: true,

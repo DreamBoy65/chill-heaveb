@@ -20,6 +20,7 @@ class Bot extends Client {
         Intents.FLAGS.GUILD_MESSAGE_TYPING,
         Intents.FLAGS.DIRECT_MESSAGE_REACTIONS,
         Intents.FLAGS.DIRECT_MESSAGE_TYPING,
+                Intents.FLAGS.GUILD_MEMBERS
             ],
             allowedMentions: {
                 parse: ["users"]

@@ -25,6 +25,8 @@ if(client.config.SlashCommands) {
 
 client.database?.init()
 
+require("./website")
+
 if(client.config.antiCrash) {
   client.listentoProcessEvents([
   'unhandledRejection',

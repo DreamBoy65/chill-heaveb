@@ -22,7 +22,7 @@ module.exports = {
       const pages = new Pages()
       
       let d2 = await Schema.find()
-      d2 = d2.filter(c => c.id)
+      d2 = d2.filter(c => c.id && c.owner.id === c._id)
       
       let des = _.chunk(d2.map(c => {
         return `• Name:\n${client.emoji.arrow} ${c.factory.name}\n• ID:\n${client.emoji.arrow} ${c.id}\n• Workers:\n${client.emoji.arrow} ${c.factory.workers.length}/${c.factory.limit}`
